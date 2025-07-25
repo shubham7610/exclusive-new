@@ -1,5 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+body {
+  padding: 0;
+  margin: 0;
+  font-size: 12px;
+  line-height: normal;
+  font-family: "Poppins", sans-serif;
+  background: white;
+}
+*{
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+a,a:hover{
+  color: #DB4444;
+  text-decoration: none;
+}
+img{
+  max-width: 100%;
+  height: auto;
+}
 .poppins-thin {
   font-family: "Poppins", sans-serif;
   font-weight: 100;
@@ -64,6 +85,7 @@
 .reduise {
   border-bottom: 2px solid;
   color: rgba(163, 165, 167, 0.792);
+  padding: 20px 0px 5px 0px;
 }
 
 .slider-home {
@@ -202,6 +224,7 @@
   justify-content: space-around;
   border-radius: 8px;
   box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.1);
+  position: relative;
 
 }
 
@@ -236,7 +259,7 @@
 
 .flashsales-card-content {
   text-align: start;
-  margin-top: 10px;
+  padding: 12px 10px 10px 12px;
   font-family: poppins;
   line-height: 10px;
   font-size: small;
@@ -301,6 +324,153 @@
   text-align: center;
   font-family: poppins;
 }
+.Products-title{
+font-size: 36px;
+    letter-spacing: 2px;
+    flex-wrap: wrap;
+    font-weight: 600;
+    line-height: 48px;
+    font-family: 'Poppins';
+  
+}
+.viewall-button{
+    background-color: #DB4444;
+    color: #FAFAFA;
+    border-radius: 4px;
+    border-style: none;
+    width: 217px;
+    height: 7px;
+    text-align: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 8px 85px 39px 67px;
+}
+.button-viewall{
+    padding: 49px 0px 0px 2px;
+    color: #fafafa;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+}
+.MusicExperience-title{
+border: 1px solid;
+width: 100%;
+background-color: #000000;
+}
+
+.Categories-item{
+  color: #00FF66;
+   padding: 16px 10px 16px 10px;
+
+}
+
+
+.text-Experience{
+    font-family: poppins;
+    font-size: 47px;
+    font-weight: 600;
+    letter-spacing: 4%;
+    color: #fafafa;
+    line-height: 58px;
+   padding: 16px 10px 16px 10px;
+}
+.buynow-button{
+  padding: 16px 10px 16px 10px;
+}
+.button-buynow{
+  background-color: #00FF66;
+  color: #ffffff;
+  cursor: pointer;
+  border-radius: 3%;
+  border-style: none;
+  width: 180px;
+  height: 50px;
+}
+#box-time{
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    text-align: center;
+    color: #000000;
+    font-size: 12px;
+    font-weight: 400;
+    padding: 16px 10px 16px 10px
+}
+.timerr{
+  height: 80px;
+  width: 80px;
+  background-color: #FFFFFF;
+  border-radius: 50%;
+  text-align: center;
+  justify-content: space-evenly;
+  font-weight: bold;
+  line-height:normal;
+  display: block;
+}
+.sale-badge1{
+    position: absolute;
+  top: 10px;
+  left: 10px;
+  background: #00FF66;
+  color: #fff;
+  padding: 3px 6px;
+  font-size: 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+
+
+.icon-container1 {
+    width: 35px;
+    height: 35px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 4px;
+    position: absolute;
+    right: 1px;
+     top: 6px;
+}  
+
+
+.icon-container1 i {
+    font-size: 16px;    
+    color: #000;        
+}
+
+.icon-container {
+    width: 35px;
+    height: 35px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 4px;
+    position: absolute;
+    right: 1px;
+    top: 50px;
+}  
+
+
+.icon-container i {
+    font-size: 16px;    
+    color: #000;        
+}
+.ExploreProducts-card-content{
+    text-align: start;
+  padding: 12px 10px 10px 12px;
+  font-family: poppins;
+  line-height: 10px;
+  font-size: small;
+}
+.Explore-Our-Products{
+  padding: 24px 0px 24px 0px;
+}
 
 @media screen and (max-width:1024px) {
   .dropdown-arrow {
@@ -311,7 +481,11 @@
     margin-left: 8px;
   }
 }
-
+@media screen and (max-width:768px) {
+  #box-time{
+    display: none;
+  }
+}
 @media screen and (max-width:320px) {
   .theemheader-title {
     letter-spacing: 1px;
@@ -327,5 +501,8 @@
     font-size: 24px;
     line-height: 32px;
     font-family: poppins;
+  }
+  .viewall-button{
+    display: none;
   }
 }
