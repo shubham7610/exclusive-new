@@ -27,6 +27,12 @@ img{
   font-style: normal;
 }
 
+.navbar-section{
+  border-bottom: 2px solid;
+  color: rgba(163, 165, 167, 0.792);
+  padding: 20px 0px 5px 0px;
+}
+
 .navbar-nav {
   gap: 24px;
   font-family: poppins;
@@ -82,11 +88,11 @@ img{
   font-size: 18px;
 }
 
-.reduise {
+/* .reduise {
   border-bottom: 2px solid;
   color: rgba(163, 165, 167, 0.792);
   padding: 20px 0px 5px 0px;
-}
+} */
 
 .slider-home {
   padding: 24px 0px 24px 0px;
@@ -166,6 +172,9 @@ img{
 
 .flesh-sales {
   padding: 24px 0px 24px 0px;
+}
+.sale-bottom{
+  border-bottom: 2px solid #F1F1F1;
 }
 
 .red-rectangle-text {
@@ -333,6 +342,7 @@ font-size: 36px;
     font-family: 'Poppins';
   
 }
+
 .viewall-button{
     background-color: #DB4444;
     color: #FAFAFA;
@@ -442,7 +452,7 @@ background-color: #000000;
     margin: 4px;
     position: absolute;
     right: 1px;
-     top: 6px;
+     top: 1px;
 }  
 
 
@@ -451,19 +461,6 @@ background-color: #000000;
     color: #000;      
     cursor: pointer;  
 }
-.icon-container1:hover {
-    width: 30px;
-    height: 30px;
-    background-color:#f80202;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 4px;
-    position: absolute;
-    right: 1px;
-     top: 6px;
-}  
 
 .icon-container {
     width: 30px;
@@ -476,23 +473,10 @@ background-color: #000000;
     margin: 4px;
     position: absolute;
     right: 1px;
-    top: 50px;
+    top: 35px;
     cursor: pointer;
 }  
-.icon-container:hover {
-    width: 30px;
-    height: 30px;
-    background-color: rgb(252, 6, 6);
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 4px;
-    position: absolute;
-    right: 1px;
-    top: 50px;
-    cursor: pointer;
-}
+
 
 .icon-container i {
     font-size: 16px;    
@@ -508,7 +492,9 @@ background-color: #000000;
 .Explore-Our-Products{
   padding: 24px 0px 24px 0px;
 }
-
+.Explore-bottom{
+  border-bottom: 2px solid #F1F1F1;
+}
 .New-Arrival{
   padding: 24px 0px 24px 0px;
 }
@@ -679,6 +665,9 @@ padding: 24px 10px 24px 10px;
     font-family: poppins;
   }
   .viewall-button{
+    display: none;
+  }
+  .buynow-button{
     display: none;
   }
 }
