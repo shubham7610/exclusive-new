@@ -5,20 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
        <link href="./asstes/css/bootstrap.min.css" rel="stylesheet">
        <link href="./asstes/css/bootstrap.css.map" rel="stylesheet">
-       <link href="./asstes/css/fontawesome.min.css" rel="stylesheet">
+       <!-- <link href="./asstes/css/fontawesome.min.css" rel="stylesheet"> -->
+       <link href="./asstes/js/owl.carousel.min.js" rel="stylesheet">
+       <link href="./asstes/js/jquery.min.js" rel="stylesheet">
+       <link href="./asstes/css/owl.carousel.min.css" rel="stylesheet">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
-       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
        <link href="./asstes/css/style.css" rel="stylesheet">
      
     <title>Document</title>
 </head>
 <body>
-  <div class="navbar-section">
+ <!-- ***** Header section*******  -->
+  <header class="navbar-section">
   <div class="container">
     <nav class="navbar navbar-expand-lg ">
-      <div class="container-fluid">
-        <a  class="navbar-brand" href="#">exclusive</a>
+        <a  class="navbar-brand" href="#">Exclusive</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -43,64 +44,61 @@
 
 
            <div class="search-box">
-    <input type="text" placeholder="Search...">
-    <i class="fa fa-search"></i>
+    <input type="text" placeholder="What are you looking for?">
+    <i class="fa fa-search" style="cursor: pointer;"></i>
 </div>
-<ul class="nav-header-icon">
-  <li class="nav-item"><i class="fa-regular fa-heart fa-lg" style="color: #000000;"></i></li>
-  <li class="nav-item"><i class="fa-regular fa-house fa-lg" style="color: #000000;"></i> </li>
-</ul>
+<li class="nav-header-icon">
+  <a href="#" class="nav-item"><i class="fa-regular fa-heart fa-lg" style="color: #000000;"></i></a>
+  <a href="#" class="nav-item"><i class="fa-regular fa-house fa-lg" style="color: #000000;"></i> </a>
+</li>
           
 </ul>
-
-
 </div>
-      </div>
     </nav>
   </div>
-</div> 
+  </header> 
 
 
 
 
- <!-- ***** main slider*******  -->
-<main>
- 
-    <div class="slider-home">
+ <!-- *****slider*******  -->
+    <slider class="slider-home">
       <div class="container">
+        <div class="slider">
         <div class="row">
       <div class="col-sm-12 col-md-12 col-lg-3">
         <div class="slider-menu">
-        <ul>
- <li class="dropdown">
+        
+ <a href="#" class="dropdown">
   <span class="" type="" data-bs-toggle="dropdown"> Women’s Fashion 
     <span class="dropdown-arrow1"><i class="fa-solid fa-arrow-right"></i></span>
  </span>
 
-  <ul class="dropdown-menu">
-    <li><a class="dropdown-item" href="#">Action</a></li>
-    <li><a class="dropdown-item" href="#">Another action</a></li>
-    <li><a class="dropdown-item" href="#">Something else here</a></li>
-  </ul>
-</li>
-  <li class="dropdown">
+  <div class="dropdown-menu">
+     <a class="dropdown-item" href="#">Action</a>
+    <a class="dropdown-item" href="#">Another action</a>
+    <a class="dropdown-item" href="#">Something else here</a>
+  </div>
+</a>
+  <a href="#" class="dropdown">
   <span class="" type="" data-bs-toggle="dropdown"> Men’s Fashion
     <span class="dropdown-arrow"><i class="fa-solid fa-arrow-right"></i></span>
   </span>
-  <ul class="dropdown-menu">
-    <li><a class="dropdown-item" href="#">Action</a></li>
-    <li><a class="dropdown-item" href="#">Another action</a></li>
-    <li><a class="dropdown-item" href="#">Something else here</a></li>
-  </ul>
-</li>
-          <li>Electronics</li>
-          <li>Home & Lifestyle</li>
-          <li>Medicine</li>
-          <li>Sports & Outdoor</li>
-          <li>Baby’s & Toys</li>
-          <li>Groceries & Pets</li>
-          <li>Health & Beauty</li>
-        </ul>
+  <div class="dropdown-menu">
+    <a class="dropdown-item" href="#">Action</a>
+    <a class="dropdown-item" href="#">Another action</a>
+    <a class="dropdown-item" href="#">Something else here</a>
+  </div>
+</a>
+
+          <a href="#">Electronics</a>
+          <a href="#">Home & Lifestyle</a>
+          <a href="#">Medicine</a>
+          <a href="#">Sports & Outdoor</a>
+          <a href="#">Baby’s & Toys</a>
+          <a href="#">Groceries & Pets</a>
+          <a href="#">Health & Beauty</a>
+   
       </div>
       </div>
 
@@ -193,13 +191,17 @@
       </div>
     </div>
     </div>
-</main>
+    </div>
+    </slider>
 
 
 <!-- ******Flash-Sales****** -->
- <section class="flesh-sales">
+ <main>
+
+  <section class="productslist-sec bestSelling-sec">
+ <div class="flesh-sales">
   <div class="container sale-bottom">
-    <div class="row">
+    <!-- <div class="row">
       <div class="col-12 col-md-12 red-rectangle-text">
         <div class="red-rectangle"></div>
         <p class="sub-title">Today's</p>
@@ -215,17 +217,26 @@
           </div>
         </div>
       </div>
+    </div> -->
+    <div class="products-title-row">
+      <h4 class="products-left-heading">Today's</h4>
     </div>
-
-
-    <div class="row">
+    <div class="products-title-row">
+      <h2 class="products-left-heading">Flash Sales</h2>
+                  <div class="pre-nextbutton hstack ms-auto">
+            <button class="btn btn-dark" id="prevSlide"><i class="fa-regular fa-square-caret-left"></i></button>
+            <button class="btn btn-dark" id="nextSlide"><i class="fa-regular fa-square-caret-right"></i></button>
+          </div>
+          </div>
+    
         <div class="owl-carousel owl-theme">
-
-          <!-- ****** owl carousel image 1 ******* -->
+     <!-- ****** owl carousel image 1 ******* -->
               <div class="item">
                 <div class="item-wrapper">
-                  <span class="sale-badge">-50%</span>
-                  <img src="/exclusive-new/asstes/images/e86f6e872757d20a14861e2e0ebd4e9889693f59 (1)c.png" alt="Gamepad"></div>
+                  <img src="/exclusive-new/asstes/images/e86f6e872757d20a14861e2e0ebd4e9889693f59 (1)c.png" alt="Gamepad">
+                 <span class="sale-badge">-50%</span></div>
+                 <div class="icon-container"><i class="fa-regular fa-heart"></i></div>
+             <div class="icon-container1"> <i class="fa-regular fa-eye"></i></div>
             <div class="flashsales-card-content">
               <p>Small bookself</p>
               <p><span class="price">$120</span>&nbsp;&nbsp; <span class="old-price">$160</span></p>
@@ -245,8 +256,10 @@
         
           <div class="item">
             <div class="item-wrapper">
-              <span class="sale-badge">-10%</span>
-              <img src="/exclusive-new/asstes/images/4f3ca1d12722dbdf98f25179d3c0b785988c513d (1)a.png" alt="Keyboard"> </div>
+              <img src="/exclusive-new/asstes/images/4f3ca1d12722dbdf98f25179d3c0b785988c513d (1)a.png" alt="Keyboard">
+               <span class="sale-badge">-10%</span> </div>
+               <div class="icon-container"><i class="fa-regular fa-heart"></i></div>
+             <div class="icon-container1"> <i class="fa-regular fa-eye"></i></div>
             <div class="flashsales-card-content">
               <p>Gucci duffie bag</p>
               <p><span class="price">$960</span> &nbsp;&nbsp; <span class="old-price">$1100</span></p>
@@ -264,8 +277,10 @@
                   <!-- ****** owl carousel image 3 ******* -->
           <div class="item">
             <div class="item-wrapper">
-              <span class="sale-badge">-15%</span>
-              <img src="/exclusive-new/asstes/images/288da330273c46e1c3dc0a8915c4b031d0345347 (2).png" alt="Monitor"> </div>
+              <img src="/exclusive-new/asstes/images/288da330273c46e1c3dc0a8915c4b031d0345347 (2).png" alt="Monitor">
+              <span class="sale-badge">-15%</span> </div>
+              <div class="icon-container"><i class="fa-regular fa-heart"></i></div>
+             <div class="icon-container1"> <i class="fa-regular fa-eye"></i></div>
             <div class="flashsales-card-content">
               <p>S-series comfort chair</p>
               <p><span class="price">$370</span>&nbsp;&nbsp; <span class="old-price">$460</span></p>
@@ -283,8 +298,10 @@
                    <!-- ****** owl carousel image 4 ******* -->
           <div class="item">
             <div class="item-wrapper">
-              <span class="sale-badge">-5%</span>
-              <img src="/exclusive-new/asstes/images/4f3ca1d12722dbdf98f25179d3c0b785988c513d (1)a.png" alt="Chair"></div>
+              <img src="/exclusive-new/asstes/images/4f3ca1d12722dbdf98f25179d3c0b785988c513d (1)a.png" alt="Chair">
+              <span class="sale-badge">-5%</span></div>
+              <div class="icon-container"><i class="fa-regular fa-heart"></i></div>
+             <div class="icon-container1"> <i class="fa-regular fa-eye"></i></div>
             <div class="flashsales-card-content">
               <p>Gucci duffie bag</p>
               <p><span class="price">$375</span>&nbsp;&nbsp; <span class="old-price">$400</span></p>
@@ -303,8 +320,10 @@
           <!-- ****** owl carousel image 5 ******* -->
           <div class="item">
             <div class="item-wrapper">
-              <span class="sale-badge">-20%</span>
-              <img src="/exclusive-new/asstes/images/e86f6e872757d20a14861e2e0ebd4e9889693f59 (1)c.png" alt="Table"> </div>
+              <img src="/exclusive-new/asstes/images/e86f6e872757d20a14861e2e0ebd4e9889693f59 (1)c.png" alt="Table">
+              <span class="sale-badge">-20%</span> </div>
+              <div class="icon-container"><i class="fa-regular fa-heart"></i></div>
+             <div class="icon-container1"> <i class="fa-regular fa-eye"></i></div>
             <div class="flashsales-card-content">
               <p>Small bookself</p>
               <p><span class="price">$190</span>&nbsp;&nbsp; <span class="old-price">$850</span></p>
@@ -320,8 +339,10 @@
                     <!-- ****** owl carousel image 6 ******* -->
           <div class="item">
             <div class="item-wrapper">
-              <span class="sale-badge">-30%</span>
-              <img src="/exclusive-new/asstes/images/ee9a38001e9f94261b28e16ea21bacb4144473e8 b.png" alt="Mouse"> </div>
+              <img src="/exclusive-new/asstes/images/ee9a38001e9f94261b28e16ea21bacb4144473e8 b.png" alt="Mouse">
+               <span class="sale-badge">-30%</span> </div>
+               <div class="icon-container"><i class="fa-regular fa-heart"></i></div>
+             <div class="icon-container1"> <i class="fa-regular fa-eye"></i></div>
             <div class="flashsales-card-content">
               <p>Tha north caat</p>
               <p><span class="price">$350</span>&nbsp;&nbsp; <span class="old-price">$950</span></p>
@@ -338,8 +359,10 @@
                     <!-- ****** owl carousel image 7 ******* -->
           <div class="item">
             <div class="item-wrapper">
-              <span class="sale-badge">-25%</span>
-              <img src="/exclusive-new/asstes/images/4f3ca1d12722dbdf98f25179d3c0b785988c513d (1)a.png" alt="Headset"> </div>
+              <img src="/exclusive-new/asstes/images/4f3ca1d12722dbdf98f25179d3c0b785988c513d (1)a.png" alt="Headset">
+              <span class="sale-badge">-25%</span> </div>
+              <div class="icon-container"><i class="fa-regular fa-heart"></i></div>
+             <div class="icon-container1"> <i class="fa-regular fa-eye"></i></div>
             <div class="flashsales-card-content">
               <p>Gucci duffie bag</p>
               <p><span class="price">$620</span>&nbsp;&nbsp; <span class="old-price">$800</span></p>
@@ -355,8 +378,10 @@
           <!-- ****** owl carousel image 8 ******* -->
           <div class="item">
             <div class="item-wrapper">
-              <span class="sale-badge">-40%</span>
-              <img src="/exclusive-new/asstes/images/e86f6e872757d20a14861e2e0ebd4e9889693f59 (1)c.png" alt="Webcam"></div>
+              <img src="/exclusive-new/asstes/images/e86f6e872757d20a14861e2e0ebd4e9889693f59 (1)c.png" alt="Webcam">
+              <span class="sale-badge">-40%</span></div>
+              <div class="icon-container"><i class="fa-regular fa-heart"></i></div>
+             <div class="icon-container1"> <i class="fa-regular fa-eye"></i></div>
             <div class="flashsales-card-content">
               <p>Small bookself</p>
               <p><span class="price">$360</span>&nbsp;&nbsp; <span class="old-price">$1150</span></p>
@@ -371,10 +396,10 @@
           </div>
 
         </div>
-      </div>
   
   <div class="view-all-button">
     <button type="button" class="btn button-products">View All Products</button>
+  </div>
   </div>
   </div>
  </section> 
@@ -382,7 +407,7 @@
 
  <!-- *****Browse By Category****** -->
   <section class="browse-By-Category">
-    <div class="container">
+    <div class="container Category-bottom">
     <div class="row">
       <div class="col-12 col-md-12 red-rectangle-text">
         <div class="red-rectangle"></div>
@@ -398,42 +423,42 @@
     </div>
      <div class="row broder-hover">
       <div class="col-sm-6 col-md-4 col-lg-2  mb-2">
-        <div class="Category-broder">
-          <img class="Category-image  mb-2" src="/exclusive-new/asstes/images/Category-CellPhone (1).jpg">
+        <div class="Category-broder mb-2">
+          <img class="Category-image" src="/exclusive-new/asstes/images/Category-CellPhone (1).jpg">
           <p class="textimage">CellPhone</p>
         </div>
       </div>
       <div class="col-sm-6 col-md-4 col-lg-2  mb-2">
-        <div class="Category-broder">
-          <img class="Category-image  mb-2" src="/exclusive-new/asstes/images/Category-Computer (1).jpg">
+        <div class="Category-broder mb-2">
+          <img class="Category-image" src="/exclusive-new/asstes/images/Category-Computer (1).jpg">
           <p class="textimage">CoumPuter</p>
         </div>
 
       </div>
       <div class="col-sm-6 col-md-4 col-lg-2  mb-2">
-        <div class="Category-broder">
-          <img class="Category-image  mb-2" src="/exclusive-new/asstes/images/Category-Headphone (1).jpg">
+        <div class="Category-broder mb-2">
+          <img class="Category-image" src="/exclusive-new/asstes/images/Category-Headphone (1).jpg">
           <p class="textimage">HeadPhone</p>
         </div>
 
       </div>
       <div class="col-sm-6 col-md-4 col-lg-2  mb-2">
         <div class="Category-broder">
-          <img class="Category-image mb-2" src="/exclusive-new/asstes/images/Category-SmartWatch (1).jpg">
+          <img class="Category-image" src="/exclusive-new/asstes/images/Category-SmartWatch (1).jpg">
           <p class="textimage">SmartPhone</p>
         </div>
 
       </div>
       <div class="col-sm-6 col-md-4 col-lg-2  mb-2">
         <div class="Category-broder">
-          <img class="Category-image mb-2" src="/exclusive-new/asstes/images/Category-Gamepad (1).jpg">
+          <img class="Category-image " src="/exclusive-new/asstes/images/Category-Gamepad (1).jpg">
           <p class="textimage">GamePed</p>
         </div>
 
       </div>
       <div class="col-sm-6 col-md-4 col-lg-2 mb-2">
         <div class="Category-broder">
-          <img class="Category-image mb-2" src="/exclusive-new/asstes/images/Category-Computer (1).jpg">
+          <img class="Category-image " src="/exclusive-new/asstes/images/Category-Computer (1).jpg">
           <p class="textimage">CoumPuter</p>
         </div>
       </div>
@@ -456,21 +481,18 @@
           <div class="theemheader-content">
           <h2 class="Products-title">Best Selling Products</h2>
           </div>
-            <div class="viewall-button hstack ms-auto">
-                       <p class="button-viewall ">View All</p>
-                 </div>
+           <button type="button" class="btn btn-danger ms-auto">View All</button>
         </div>
       </div>
     </div>
 
 
     <div class="row">
-
-          <!-- ****** owl carousel image 1 ******* -->
+          <!-- ******  image 1 ******* -->
               <div class="SellingProducts-content col-sm-12 col-md-6 col-lg-3">
               <div class="item">
-                  <span class="sale-badge">-50%</span>
-                  <img src="/exclusive-new/asstes/images/e86f6e872757d20a14861e2e0ebd4e9889693f59 (1)c.png" alt="Gamepad"></div>
+                  <img src="/exclusive-new/asstes/images/e86f6e872757d20a14861e2e0ebd4e9889693f59 (1)c.png" alt="Gamepad">
+                   <span class="sale-badge">-50%</span></div>
             <div class="flashsales-card-content">
               <p>Small bookself</p>
               <p><span class="price">$120</span>&nbsp;&nbsp; <span class="old-price">$160</span></p>
@@ -484,11 +506,11 @@
               </span>
           </div>
          </div>
-          <!-- ****** owl carousel image 2 ******* -->
+          <!-- ****** image 2 ******* -->
               <div class="SellingProducts-content col-sm-12 col-md-6 col-lg-3">
           <div class="item">
-                          <span class="sale-badge">-10%</span>
-              <img src="/exclusive-new/asstes/images/4f3ca1d12722dbdf98f25179d3c0b785988c513d (1)a.png" alt="Keyboard"> </div>
+              <img src="/exclusive-new/asstes/images/4f3ca1d12722dbdf98f25179d3c0b785988c513d (1)a.png" alt="Keyboard">
+              <span class="sale-badge">-10%</span> </div>
             <div class="flashsales-card-content">
               <p>Gucci duffie bag</p>
               <p><span class="price">$960</span> &nbsp;&nbsp; <span class="old-price">$1100</span></p>
@@ -503,11 +525,11 @@
             </div>
             </div>
 
-                  <!-- ****** owl carousel image 3 ******* -->
-              <div class="SellingProducts-content col-sm-12 col-md-6 col-lg-3">
+                  <!-- ******image 3 ******* -->
+              <div class="SellingProducts-content col-sm-12 col-md-6 col-lg-3 mt-2">
               <div class="item">
-              <span class="sale-badge">-15%</span>
-              <img src="/exclusive-new/asstes/images/288da330273c46e1c3dc0a8915c4b031d0345347 (2).png" alt="Monitor"> </div>
+              <img src="/exclusive-new/asstes/images/288da330273c46e1c3dc0a8915c4b031d0345347 (2).png" alt="Monitor"> 
+              <span class="sale-badge">-15%</span></div>
             <div class="flashsales-card-content">
               <p>S-series comfort chair</p>
               <p><span class="price">$370</span>&nbsp;&nbsp; <span class="old-price">$460</span></p>
@@ -523,11 +545,11 @@
             </div>
 
                  
-            <!-- ****** owl carousel image 4 ******* -->
-              <div class="SellingProducts-content col-sm-12 col-md-6 col-lg-3">
+            <!-- ****** image 4 ******* -->
+              <div class="SellingProducts-content col-sm-12 col-md-6 col-lg-3 mt-2">
                <div class="item">
-              <span class="sale-badge">-5%</span>
-              <img src="/exclusive-new/asstes/images/4f3ca1d12722dbdf98f25179d3c0b785988c513d (1)a.png" alt="Chair"></div>
+              <img src="/exclusive-new/asstes/images/4f3ca1d12722dbdf98f25179d3c0b785988c513d (1)a.png" alt="Chair">
+              <span class="sale-badge">-5%</span></div>
             <div class="flashsales-card-content">
               <p>Gucci duffie bag</p>
               <p><span class="price">$375</span>&nbsp;&nbsp; <span class="old-price">$400</span></p>
@@ -577,7 +599,7 @@
 <!-- ******Explore Our Products****** -->
  <section class="Explore-Our-Products">
   <div class="Explore-Our-Products">
-  <div class="container Explore-bottom">
+  <div class="container">
     <div class="row">
       <div class="col-12 col-md-12 red-rectangle-text">
         <div class="red-rectangle"></div>
@@ -596,15 +618,13 @@
       </div>
     </div>
 
-
-    <div class="row">
         <div class="owl-carousel owl-theme">
            <!-- ****** owl carousel image 1 *******-->
               <div class="item">
                 <div class="item-wrapper">
-                  <div class="icon-container"><i class="fa-regular fa-heart"></i></div>
-             <div class="icon-container1"> <i class="fa-regular fa-eye"></i></div>
                   <img src="./asstes/images/04a1915fd6cedd7c8b1073685c5f1be1b50e1ac600.png" alt="Gamepad"></div>
+              <div class="icon-container"><i class="fa-regular fa-heart"></i></div>
+             <div class="icon-container1"> <i class="fa-regular fa-eye"></i></div>
             <div class="ExploreProducts-card-content">
               <p>Quilted Satin Jacket</p>
               <p><span class="price">$120</span>&nbsp;&nbsp; 
@@ -624,9 +644,9 @@
         
           <div class="item">
             <div class="item-wrapper">
-                 <div class="icon-container"><i class="fa-regular fa-heart"></i></div>
-             <div class="icon-container1"> <i class="fa-regular fa-eye"></i></div>
               <img src="./asstes/images/288e013365fe639fccc1fe4168fca740ef1f85e7 (1)000.png" alt="Keyboard"> </div>
+               <div class="icon-container"><i class="fa-regular fa-heart"></i></div>
+             <div class="icon-container1"> <i class="fa-regular fa-eye"></i></div>
             <div class="ExploreProducts-card-content">
               <p>GP11 Shooter USB Gamepad</p>
               <p><span class="price">$960</span> &nbsp;&nbsp; 
@@ -645,9 +665,9 @@
                   <!-- ****** owl carousel image 3 *******-->
           <div class="item">
             <div class="item-wrapper">
-                <div class="icon-container"><i class="fa-regular fa-heart"></i></div>
-             <div class="icon-container1"> <i class="fa-regular fa-eye"></i></div>
               <img src="./asstes/images/203be522b7b02d10672f6f6147762cf52bfcfc54 (2)000003.png" alt="Monitor"> </div>
+              <div class="icon-container"><i class="fa-regular fa-heart"></i></div>
+             <div class="icon-container1"> <i class="fa-regular fa-eye"></i></div>
             <div class="ExploreProducts-card-content">
               <p>ASUS FHD Gaming Laptop</p>
               <p><span class="price">$370</span>&nbsp;&nbsp; 
@@ -666,9 +686,9 @@
                    <!-- ****** owl carousel image 4 *******-->
           <div class="item">
             <div class="item-wrapper">
-               <div class="icon-container"><i class="fa-regular fa-heart"></i></div>
-             <div class="icon-container1"> <i class="fa-regular fa-eye"></i></div>
               <img src="./asstes/images/5f4ea9acf805319ddf3897fc9daaf58559542260 (1)000001.png" alt="Chair"></div>
+              <div class="icon-container"><i class="fa-regular fa-heart"></i></div>
+             <div class="icon-container1"> <i class="fa-regular fa-eye"></i></div>
             <div class="ExploreProducts-card-content">
               <p>Gucci duffie bag</p>
               <p><span class="price">$375</span>&nbsp;&nbsp; 
@@ -687,9 +707,9 @@
           <!-- ****** owl carousel image 5 *******-->
           <div class="item">
             <div class="item-wrapper">
-                <div class="icon-container"><i class="fa-regular fa-heart"></i></div>
-             <div class="icon-container1"> <i class="fa-regular fa-eye"></i></div>
               <img src="/exclusive-new/asstes/images/e86f6e872757d20a14861e2e0ebd4e9889693f59 (1)c.png" alt="Table"> </div>
+              <div class="icon-container"><i class="fa-regular fa-heart"></i></div>
+             <div class="icon-container1"> <i class="fa-regular fa-eye"></i></div>
             <div class="ExploreProducts-card-content">
               <p>Small bookself</p>
               <p><span class="price">$190</span>&nbsp;&nbsp;
@@ -705,9 +725,9 @@
                     <!-- ****** owl carousel image 6 *******-->
           <div class="item">
             <div class="item-wrapper">
-                <div class="icon-container"><i class="fa-regular fa-heart"></i></div>
-             <div class="icon-container1"> <i class="fa-regular fa-eye"></i></div>
               <img src="/exclusive-new/asstes/images/ee9a38001e9f94261b28e16ea21bacb4144473e8 b.png" alt="Mouse"> </div>
+              <div class="icon-container"><i class="fa-regular fa-heart"></i></div>
+             <div class="icon-container1"> <i class="fa-regular fa-eye"></i></div>
             <div class="ExploreProducts-card-content">
               <p>Tha north caat</p>
               <p><span class="price">$350</span>&nbsp;&nbsp; 
@@ -724,9 +744,9 @@
                     <!-- ****** owl carousel image 7 *******-->
           <div class="item">
             <div class="item-wrapper">
-                <div class="icon-container"><i class="fa-regular fa-heart"></i></div>
-             <div class="icon-container1"> <i class="fa-regular fa-eye"></i></div>
               <img src="/exclusive-new/asstes/images/4f3ca1d12722dbdf98f25179d3c0b785988c513d (1)a.png" alt="Headset"> </div>
+              <div class="icon-container"><i class="fa-regular fa-heart"></i></div>
+             <div class="icon-container1"> <i class="fa-regular fa-eye"></i></div>
             <div class="ExploreProducts-card-content">
               <p>Gucci duffie bag</p>
               <p><span class="price">$620</span>&nbsp;&nbsp; 
@@ -742,9 +762,9 @@
           <!-- ****** owl carousel image 8 *******-->
           <div class="item">
             <div class="item-wrapper">
-                <div class="icon-container"><i class="fa-regular fa-heart"></i></div>
-             <div class="icon-container1"> <i class="fa-regular fa-eye"></i></div>
               <img src="/exclusive-new/asstes/images/e86f6e872757d20a14861e2e0ebd4e9889693f59 (1)c.png" alt="Webcam"></div>
+              <div class="icon-container"><i class="fa-regular fa-heart"></i></div>
+             <div class="icon-container1"> <i class="fa-regular fa-eye"></i></div>
             <div class="ExploreProducts-card-content">
               <p>Small bookself</p>
               <p><span class="price">$360</span>&nbsp;&nbsp;
@@ -759,18 +779,14 @@
           </div>
 
         </div>
-      </div>
 
-
-
-          <div class="row">
         <div class="owl-carousel owl-theme">
            <!-- ****** owl carousel image 1 *******-->
               <div class="item">
-            <div class="item-wrapper">
-                <div class="icon-container"><i class="fa-regular fa-heart"></i></div>
-             <div class="icon-container1"> <i class="fa-regular fa-eye"></i></div>
+            <div class="item-wrapper mt-2">
                   <img src="./asstes/images/e7bdd11662ea1dfc2d615a5bb054e139a764f306 (1)000002.png" alt="Gamepad"></div>
+                  <div class="icon-container"><i class="fa-regular fa-heart"></i></div>
+             <div class="icon-container1"> <i class="fa-regular fa-eye"></i></div>
             <div class="ExploreProducts-card-content">
               <p>Curology Product Set </p>
               <p><span class="price">$120</span>&nbsp;&nbsp;
@@ -789,11 +805,11 @@
           <!-- ****** owl carousel image 2 *******-->
         
           <div class="item">
-            <div class="item-wrapper">
-               <div class="icon-container"><i class="fa-regular fa-heart"></i></div>
-             <div class="icon-container1"> <i class="fa-regular fa-eye"></i></div>
-              <span class="sale-badge1">-10%</span>
+            <div class="item-wrapper mt-2">
               <img src="./asstes/images/e60892a4f0a3d5d144dce622c7338ec5be12908f (1)000004.png" alt="Keyboard"> </div>
+               <a href="#" class="sale-badge1">-10%</a>
+              <div class="icon-container"><i class="fa-regular fa-heart"></i></div>
+             <div class="icon-container1"> <i class="fa-regular fa-eye"></i></div>
             <div class="ExploreProducts-card-content">
               <p>CANON EOS DSLR Camera</p>
               <p><span class="price">$960</span> &nbsp;&nbsp; 
@@ -810,10 +826,10 @@
 
                   <!-- ****** owl carousel image 3 *******-->
           <div class="item">
-            <div class="item-wrapper">
-               <div class="icon-container"><i class="fa-regular fa-heart"></i></div>
-             <div class="icon-container1"> <i class="fa-regular fa-eye"></i></div>
+            <div class="item-wrapper mt-2">
               <img src="./asstes/images/d0b7bb25884f6fdfc1357634d7d7b09e05755c2f (1)0000.png" alt="Monitor"> </div>
+              <div class="icon-container"><i class="fa-regular fa-heart"></i></div>
+             <div class="icon-container1"> <i class="fa-regular fa-eye"></i></div>
             <div class="ExploreProducts-card-content">
               <p>Jr. Zoom Soccer Cleats</p>
               <p><span class="price">$370</span>&nbsp;&nbsp; 
@@ -830,11 +846,11 @@
 
                    <!-- ****** owl carousel image 4 *******-->
           <div class="item">
-            <div class="item-wrapper">
-               <div class="icon-container"><i class="fa-regular fa-heart"></i></div>
-             <div class="icon-container1"> <i class="fa-regular fa-eye"></i></div>
-              <span class="sale-badge1">-5%</span>
+            <div class="item-wrapper mt-2">
               <img src="./asstes/images/78e727118c99fe72271cf43f5e3566b39ca7c8f4 (2).jpg" alt="Chair"></div>
+              <a href="#" class="sale-badge1">-5%</a>
+              <div class="icon-container"><i class="fa-regular fa-heart"></i></div>
+             <div class="icon-container1"> <i class="fa-regular fa-eye"></i></div>
             <div class="ExploreProducts-card-content">
               <p>Breed Dry Dog Food</p>
               <p><span class="price">$375</span>&nbsp;&nbsp; 
@@ -852,11 +868,11 @@
 
           <!-- ****** owl carousel image 5 *******-->
           <div class="item">
-            <div class="item-wrapper">
-               <div class="icon-container"><i class="fa-regular fa-heart"></i></div>
-             <div class="icon-container1"> <i class="fa-regular fa-eye"></i></div>
-              <span class="sale-badge1">-20%</span>
+            <div class="item-wrapper mt-2">
               <img src="./asstes/images/04a1915fd6cedd7c8b1073685c5f1be1b50e1ac600.png" alt="Table"> </div>
+                <a href="#" class="sale-badge1">20%</a>
+              <div class="icon-container"><i class="fa-regular fa-heart"></i></div>
+             <div class="icon-container1"> <i class="fa-regular fa-eye"></i></div>
             <div class="ExploreProducts-card-content">
               <p>Small bookself</p>
               <p><span class="price">$190</span>&nbsp;&nbsp; 
@@ -871,10 +887,10 @@
 
                     <!-- ****** owl carousel image 6 *******-->
           <div class="item">
-            <div class="item-wrapper">
+            <div class="item-wrapper mt-2">
+              <img src="/exclusive-new/asstes/images/288da330273c46e1c3dc0a8915c4b031d0345347 (2).png" alt="Mouse"> </div>
               <div class="icon-container"><i class="fa-regular fa-heart"></i></div>
              <div class="icon-container1"> <i class="fa-regular fa-eye"></i></div>
-              <img src="/exclusive-new/asstes/images/288da330273c46e1c3dc0a8915c4b031d0345347 (2).png" alt="Mouse"> </div>
             <div class="ExploreProducts-card-content">
               <p>Tha north caat</p>
               <p><span class="price">$350</span>&nbsp;&nbsp; 
@@ -890,11 +906,11 @@
 
                     <!-- ****** owl carousel image 7 *******-->
           <div class="item">
-            <div class="item-wrapper">
+            <div class="item-wrapper mt-2">
+              <img src="./asstes/images/3cc943ca7e210f637fc0504b7d93cd207df744c2 (2).png" alt="Headset"> </div>
+                <a href="#" class="sale-badge1">-25%</a>
               <div class="icon-container"><i class="fa-regular fa-heart"></i></div>
              <div class="icon-container1"> <i class="fa-regular fa-eye"></i></div>
-              <span class="sale-badge1">-25%</span>
-              <img src="./asstes/images/3cc943ca7e210f637fc0504b7d93cd207df744c2 (2).png" alt="Headset"> </div>
             <div class="ExploreProducts-card-content">
               <p>Gucci duffie bag</p>
               <p><span class="price">$620</span>&nbsp;&nbsp;
@@ -909,10 +925,10 @@
 
           <!-- ****** owl carousel image 8 *******-->
           <div class="item">
-            <div class="item-wrapper">
-                <div class="icon-container"><i class="fa-regular fa-heart"></i></div>
-             <div class="icon-container1"> <i class="fa-regular fa-eye"></i></div>
+            <div class="item-wrapper mt-2">
               <img src="/exclusive-new/asstes/images/e86f6e872757d20a14861e2e0ebd4e9889693f59 (1)c.png" alt="Webcam"></div>
+              <div class="icon-container"><i class="fa-regular fa-heart"></i></div>
+             <div class="icon-container1"> <i class="fa-regular fa-eye"></i></div>
             <div class="ExploreProducts-card-content">
               <p>Small bookself</p>
               <p><span class="price">$360</span>&nbsp;&nbsp; 
@@ -927,8 +943,6 @@
           </div>
 
         </div>
-      </div>
- 
   <div class="view-all-button">
     <button type="button" class="btn button-products">View All Products</button>
   </div>
@@ -1000,8 +1014,9 @@
 </div>
 </section>
 
+</main>
 <!-- ******Footer****** -->
-<section class="Footer">
+<footer class="Footer">
 <div class="container-fluid">
  <div class="row">
 <div class="footer-content">
@@ -1056,7 +1071,7 @@
         <p class="footer-Rimel">Copyright Rimel 2022. All right reserved</p>
       </div>
 </div>
-</section>
+</footer>
 
 
 <script src="./exclusive-new/asstes/js/bootstrap.min.js"></script>

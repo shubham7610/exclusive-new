@@ -30,45 +30,36 @@ img{
 .navbar-section{
   border-bottom: 2px solid;
   color: rgba(163, 165, 167, 0.792);
-  padding: 20px 0px 5px 0px;
+  padding: 5px 0px 5px 0px;
 }
 
 .navbar-nav {
   gap: 24px;
-  font-family: poppins;
   color: #000000;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
   letter-spacing: 0;
   flex-wrap: wrap;
-  margin-left: 125px;
 }
 
 .navbar-brand {
-  font-weight: 600;
+  font-weight: 700;
   font-size: 24px;
   line-height: 24px;
-  font-family: poppins;
+  letter-spacing: 3%;
 }
 
 .nav-header-icon {
   list-style: none;
   display: flex;
   gap: 24px;
-  width: 106px;
-  height: 24px;
-  cursor: pointer;
-  padding-top: 10px;
+  line-height: 45px;
 }
-
-
-
-
 
 .search-box {
   position: relative;
-  width: 155px;
+  width: 243px;
 }
 
 .search-box input {
@@ -77,6 +68,7 @@ img{
   border-radius: 4px;
   border: 1px solid #ccc;
   font-size: 11px;
+
 }
 
 .search-box i {
@@ -88,27 +80,23 @@ img{
   font-size: 18px;
 }
 
-/* .reduise {
-  border-bottom: 2px solid;
-  color: rgba(163, 165, 167, 0.792);
-  padding: 20px 0px 5px 0px;
-} */
+/* *****slider css start***** */
 
-.slider-home {
+.slider {
   padding: 24px 0px 24px 0px;
 }
 
-.slider-menu ul li {
+.slider-menu a {
   border-style: none;
-  font-family: poppins;
   list-style: none;
   font-weight: 400;
   font-size: 16px;
-  line-height: 24px;
-  padding: 10px 5px 10px 5px;
+  line-height: 23px;
+  padding: 10px 0px 10px 0px;
   letter-spacing: 0%;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
+  display: block;
+  color: #000000;
+  gap: 16px;
 }
 
 .border-radious {
@@ -118,13 +106,11 @@ img{
 
 .dropdown-arrow {
   margin-left: 78px;
-  cursor: pointer;
   flex-wrap: wrap;
 }
 
 .dropdown-arrow1 {
   margin-left: 51px;
-  cursor: pointer;
   flex-wrap: wrap;
 }
 
@@ -140,7 +126,6 @@ img{
 .slider-img {
   display: flex;
   justify-content: center;
-  flex: columm;
 }
 
 .banner img {
@@ -170,8 +155,58 @@ img{
 
 
 
+
+
+
+
+.products-title-row {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0px;
+}
+
+.products-left-heading h2 {
+    letter-spacing: 4px;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 48px;
+}
+
+.products-left-heading h4{
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: #DB4444;
+    padding: 5px 0 5px 20px;
+    position: relative;
+    margin: 0 0 10px;
+border-left: 10px solid red;
+  
+}
+
+.products-left-heading h4::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 10px;
+    height: 100%;
+    background: #DB4444;
+    border-radius: 10px;
+}
+
 .flesh-sales {
   padding: 24px 0px 24px 0px;
+}
+
+.productslist-sec{
+  padding: 40px 0;
+  overflow: hidden;
+}
+.productslist-sec .owl-carousel .owl-stage-outer{
+  overflow: visible !important;
 }
 .sale-bottom{
   border-bottom: 2px solid #F1F1F1;
@@ -195,7 +230,6 @@ img{
   font-size: 16px;
   line-height: 20px;
   letter-spacing: 0%;
-  font-family: poppins;
   gap: 16px;
   color: #DB4444;
   padding: 7px 5px 7px 5px
@@ -211,7 +245,6 @@ img{
   font-weight: 600;
   font-size: 36px;
   line-height: 48px;
-  font-family: poppins;
 
 }
 
@@ -228,11 +261,9 @@ img{
 
 .item {
   background: #fff;
-  padding: 10px;
   text-align: center;
   justify-content: space-around;
   border-radius: 8px;
-  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.1);
   position: relative;
 
 }
@@ -242,6 +273,7 @@ img{
   height: 150px;
   object-fit: contain;
   background-color: #F5F5F5;
+border-radius: 10px 10px 0px 0px;
 }
 
 .price {
@@ -269,9 +301,10 @@ img{
 .flashsales-card-content {
   text-align: start;
   padding: 12px 10px 10px 12px;
-  font-family: poppins;
   line-height: 10px;
   font-size: small;
+      border: 2px solid #f5f5f5;
+    border-radius: 0px 0px 10px 10px;
 }
 
 .view-all-button {
@@ -297,14 +330,15 @@ img{
   font-weight: 600;
   font-size: 36px;
   line-height: 48px;
-  font-family: poppins;
 }
 
 .broder {
   padding: 10px 5px 10px 5px;
 
 }
-
+.Category-bottom{
+  border-bottom: 2px solid #F1F1F1;
+}
 .Category-broder {
   width: 100%;
   height: auto;
@@ -324,14 +358,11 @@ img{
   text-align: center;
   border-radius: 50%;
   justify-content: center;
-  text-align: center;
   border-radius: 50%;
 }
-
 .textimage {
   margin-top: 5px;
   text-align: center;
-  font-family: poppins;
 }
 .Products-title{
 font-size: 36px;
@@ -339,31 +370,9 @@ font-size: 36px;
     flex-wrap: wrap;
     font-weight: 600;
     line-height: 48px;
-    font-family: 'Poppins';
   
 }
 
-.viewall-button{
-    background-color: #DB4444;
-    color: #FAFAFA;
-    border-radius: 4px;
-    border-style: none;
-    width: 217px;
-    height: 7px;
-    text-align: center;
-    justify-content: center;
-    gap: 10px;
-    padding: 8px 85px 39px 67px;
-    cursor: pointer;
-}
-.button-viewall{
-    padding: 49px 0px 0px 2px;
-    color: #fafafa;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 20px;
-    cursor: pointer;
-}
 .MusicExperience-title{
 border: 1px solid;
 width: 100%;
@@ -385,7 +394,6 @@ background-color: #000000;
   padding: 24px 0px 24px 0px;
 }
 .text-Experience{
-    font-family: poppins;
     font-size: 47px;
     font-weight: 600;
     letter-spacing: 4%;
@@ -399,7 +407,6 @@ background-color: #000000;
 .button-buynow{
   background-color: #00FF66;
   color: #ffffff;
-  cursor: pointer;
   border-radius: 3%;
   border-style: none;
   width: 180px;
@@ -488,13 +495,14 @@ background-color: #000000;
   font-family: poppins;
   line-height: 10px;
   font-size: small;
+        border: 2px solid #f5f5f5;
+    border-radius: 0px 0px 10px 10px;
 }
+
 .Explore-Our-Products{
   padding: 24px 0px 24px 0px;
 }
-.Explore-bottom{
-  border-bottom: 2px solid #F1F1F1;
-}
+
 .New-Arrival{
   padding: 24px 0px 24px 0px;
 }
@@ -572,14 +580,12 @@ background-color: #000000;
     padding: 5px 5px 5px 5px;
     font-size: 15px;
     font-weight: 600;
-    font-family: 'Poppins';
     line-height: 28px;
     }
 .service2{
   line-height: 16px;
     font-size: 13px;
     font-weight: 500;
-    font-family: 'Poppins';
     padding: 5px 5px 5px 5px;
 
 }
@@ -604,7 +610,6 @@ padding: 24px;
     color: white;
     font-size: 24px;
     font-weight: 700;
-    font-family: poppins;
    }
    .footertext:hover{
     color: rgba(223, 66, 9, 0.708);
@@ -614,7 +619,6 @@ padding: 24px;
     line-height: 36px;
     font-size: 16px;
     font-weight: 500;
-    font-family: poppins;
    }
       .footertext1:hover{
     color: rgba(196, 28, 13, 0.685);
@@ -654,7 +658,6 @@ padding: 24px 10px 24px 10px;
     font-weight: 500;
     font-size: 30px;
     line-height: 48px;
-    font-family: poppins;
   }
 
   .theem-title {
@@ -662,11 +665,15 @@ padding: 24px 10px 24px 10px;
     font-weight: 600;
     font-size: 24px;
     line-height: 32px;
-    font-family: poppins;
   }
-  .viewall-button{
-    display: none;
+  .Products-title{
+    font-size: 24px;
+    letter-spacing: 0px;
+    flex-wrap: wrap;
+    font-weight: 600;
+    line-height: 27px;
   }
+
   .buynow-button{
     display: none;
   }
