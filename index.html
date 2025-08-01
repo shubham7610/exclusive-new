@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
        <link href="./asstes/css/bootstrap.min.css" rel="stylesheet">
-       <link href="./asstes/css/bootstrap.css.map" rel="stylesheet">
-       <!-- <link href="./asstes/css/fontawesome.min.css" rel="stylesheet"> -->
+       <!-- <link href="./asstes/js/bootstrap.bundle.js.map" rel="stylesheet"> -->
+       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+       <link href="./asstes/css/fontawesome.min.css" rel="stylesheet">
        <link href="./asstes/js/owl.carousel.min.js" rel="stylesheet">
        <link href="./asstes/js/jquery.min.js" rel="stylesheet">
        <link href="./asstes/css/owl.carousel.min.css" rel="stylesheet">
@@ -67,37 +68,54 @@
         <div class="slider">
         <div class="row">
       <div class="col-sm-12 col-md-12 col-lg-3">
-        <div class="slider-menu">
-        
- <a href="#" class="dropdown">
-  <span class="" type="" data-bs-toggle="dropdown"> Women’s Fashion 
-    <span class="dropdown-arrow1"><i class="fa-solid fa-arrow-right"></i></span>
- </span>
+        <div class="slider-menu"> 
+             <li class="nav-item">
+             <div class="dropdown">
+            <a class="nav-link active " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Women’s Fashion  <span class="dropdown-arrow1"><i class="fa-solid fa-arrow-right"></i></span>
+              </a>
 
-  <div class="dropdown-menu">
-     <a class="dropdown-item" href="#">Action</a>
-    <a class="dropdown-item" href="#">Another action</a>
-    <a class="dropdown-item" href="#">Something else here</a>
-  </div>
-</a>
-  <a href="#" class="dropdown">
-  <span class="" type="" data-bs-toggle="dropdown"> Men’s Fashion
-    <span class="dropdown-arrow"><i class="fa-solid fa-arrow-right"></i></span>
-  </span>
-  <div class="dropdown-menu">
-    <a class="dropdown-item" href="#">Action</a>
-    <a class="dropdown-item" href="#">Another action</a>
-    <a class="dropdown-item" href="#">Something else here</a>
-  </div>
-</a>
+         <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">Action</a></li>
+          <li><a class="dropdown-item" href="#">Another action</a></li>
+         <li><a class="dropdown-item" href="#">Something else here</a></li>
+        </ul>
+          </div> 
+           </li> 
+             <li class="nav-item">
+             <div class="dropdown">
+            <a class="nav-link active " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Men’s Fashion    <span class="dropdown-arrow"><i class="fa-solid fa-arrow-right"></i></span>
+              </a>
 
-          <a href="#">Electronics</a>
-          <a href="#">Home & Lifestyle</a>
-          <a href="#">Medicine</a>
-          <a href="#">Sports & Outdoor</a>
-          <a href="#">Baby’s & Toys</a>
-          <a href="#">Groceries & Pets</a>
-          <a href="#">Health & Beauty</a>
+         <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">Action</a></li>
+          <li><a class="dropdown-item" href="#">Another action</a></li>
+         <li><a class="dropdown-item" href="#">Something else here</a></li>
+        </ul>
+          </div> 
+           </li>           
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Electronics</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home & Lifestyle</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Medicine</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Sports & Outdoor</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Baby’s & Toys</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Groceries & Pets</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Health & Beauty</a>
+            </li>
    
       </div>
       </div>
@@ -182,11 +200,6 @@
             <button type="button" data-bs-target="#iphoneCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
           </div>
         </div>
-
-
-
-
-    
         </div>
       </div>
     </div>
@@ -201,39 +214,20 @@
   <section class="productslist-sec bestSelling-sec">
  <div class="flesh-sales">
   <div class="container sale-bottom">
-    <!-- <div class="row">
-      <div class="col-12 col-md-12 red-rectangle-text">
-        <div class="red-rectangle"></div>
-        <p class="sub-title">Today's</p>
-      </div>
-      <div class="col-12">
-        <div class="theemheader">
-          <div class="theemheader-content">
-          <h2 class="theemheader-title">Flash Sales</h2>
-          </div>
-            <div class="pre-nextbutton hstack ms-auto">
-            <button class="btn btn-dark" id="prevSlide"><i class="fa-regular fa-square-caret-left"></i></button>
-            <button class="btn btn-dark" id="nextSlide"><i class="fa-regular fa-square-caret-right"></i></button>
-          </div>
-        </div>
-      </div>
-    </div> -->
     <div class="products-title-row">
-      <h4 class="products-left-heading">Today's</h4>
-    </div>
-    <div class="products-title-row">
-      <h2 class="products-left-heading">Flash Sales</h2>
-                  <div class="pre-nextbutton hstack ms-auto">
+    <div class="products-left-heading">
+      <h4 class="">Today's</h4><h2 class="products-heading">Flash Sales</h2></div>
+                  <div class="pre-nextbutton  ms-auto">
             <button class="btn btn-dark" id="prevSlide"><i class="fa-regular fa-square-caret-left"></i></button>
             <button class="btn btn-dark" id="nextSlide"><i class="fa-regular fa-square-caret-right"></i></button>
           </div>
           </div>
-    
+
         <div class="owl-carousel owl-theme">
      <!-- ****** owl carousel image 1 ******* -->
               <div class="item">
                 <div class="item-wrapper">
-                  <img src="/exclusive-new/asstes/images/e86f6e872757d20a14861e2e0ebd4e9889693f59 (1)c.png" alt="Gamepad">
+                  <img src="./asstes/images/e86f6e872757d20a14861e2e0ebd4e9889693f59 (1)c.png" alt="Gamepad">
                  <span class="sale-badge">-50%</span></div>
                  <div class="icon-container"><i class="fa-regular fa-heart"></i></div>
              <div class="icon-container1"> <i class="fa-regular fa-eye"></i></div>
@@ -256,7 +250,7 @@
         
           <div class="item">
             <div class="item-wrapper">
-              <img src="/exclusive-new/asstes/images/4f3ca1d12722dbdf98f25179d3c0b785988c513d (1)a.png" alt="Keyboard">
+              <img src="./asstes/images/4f3ca1d12722dbdf98f25179d3c0b785988c513d (1)a.png" alt="Keyboard">
                <span class="sale-badge">-10%</span> </div>
                <div class="icon-container"><i class="fa-regular fa-heart"></i></div>
              <div class="icon-container1"> <i class="fa-regular fa-eye"></i></div>
@@ -277,7 +271,7 @@
                   <!-- ****** owl carousel image 3 ******* -->
           <div class="item">
             <div class="item-wrapper">
-              <img src="/exclusive-new/asstes/images/288da330273c46e1c3dc0a8915c4b031d0345347 (2).png" alt="Monitor">
+              <img src="./asstes/images/288da330273c46e1c3dc0a8915c4b031d0345347 (2).png" alt="Monitor">
               <span class="sale-badge">-15%</span> </div>
               <div class="icon-container"><i class="fa-regular fa-heart"></i></div>
              <div class="icon-container1"> <i class="fa-regular fa-eye"></i></div>
@@ -298,7 +292,7 @@
                    <!-- ****** owl carousel image 4 ******* -->
           <div class="item">
             <div class="item-wrapper">
-              <img src="/exclusive-new/asstes/images/4f3ca1d12722dbdf98f25179d3c0b785988c513d (1)a.png" alt="Chair">
+              <img src="./asstes/images/4f3ca1d12722dbdf98f25179d3c0b785988c513d (1)a.png" alt="Chair">
               <span class="sale-badge">-5%</span></div>
               <div class="icon-container"><i class="fa-regular fa-heart"></i></div>
              <div class="icon-container1"> <i class="fa-regular fa-eye"></i></div>
@@ -320,7 +314,7 @@
           <!-- ****** owl carousel image 5 ******* -->
           <div class="item">
             <div class="item-wrapper">
-              <img src="/exclusive-new/asstes/images/e86f6e872757d20a14861e2e0ebd4e9889693f59 (1)c.png" alt="Table">
+              <img src="./asstes/images/e86f6e872757d20a14861e2e0ebd4e9889693f59 (1)c.png" alt="Table">
               <span class="sale-badge">-20%</span> </div>
               <div class="icon-container"><i class="fa-regular fa-heart"></i></div>
              <div class="icon-container1"> <i class="fa-regular fa-eye"></i></div>
@@ -339,7 +333,7 @@
                     <!-- ****** owl carousel image 6 ******* -->
           <div class="item">
             <div class="item-wrapper">
-              <img src="/exclusive-new/asstes/images/ee9a38001e9f94261b28e16ea21bacb4144473e8 b.png" alt="Mouse">
+              <img src="./asstes/images/ee9a38001e9f94261b28e16ea21bacb4144473e8 b.png" alt="Mouse">
                <span class="sale-badge">-30%</span> </div>
                <div class="icon-container"><i class="fa-regular fa-heart"></i></div>
              <div class="icon-container1"> <i class="fa-regular fa-eye"></i></div>
@@ -359,7 +353,7 @@
                     <!-- ****** owl carousel image 7 ******* -->
           <div class="item">
             <div class="item-wrapper">
-              <img src="/exclusive-new/asstes/images/4f3ca1d12722dbdf98f25179d3c0b785988c513d (1)a.png" alt="Headset">
+              <img src="./asstes/images/4f3ca1d12722dbdf98f25179d3c0b785988c513d (1)a.png" alt="Headset">
               <span class="sale-badge">-25%</span> </div>
               <div class="icon-container"><i class="fa-regular fa-heart"></i></div>
              <div class="icon-container1"> <i class="fa-regular fa-eye"></i></div>
@@ -378,7 +372,7 @@
           <!-- ****** owl carousel image 8 ******* -->
           <div class="item">
             <div class="item-wrapper">
-              <img src="/exclusive-new/asstes/images/e86f6e872757d20a14861e2e0ebd4e9889693f59 (1)c.png" alt="Webcam">
+              <img src="./asstes/images/e86f6e872757d20a14861e2e0ebd4e9889693f59 (1)c.png" alt="Webcam">
               <span class="sale-badge">-40%</span></div>
               <div class="icon-container"><i class="fa-regular fa-heart"></i></div>
              <div class="icon-container1"> <i class="fa-regular fa-eye"></i></div>
@@ -407,91 +401,72 @@
 
  <!-- *****Browse By Category****** -->
   <section class="browse-By-Category">
-    <div class="container Category-bottom">
-    <div class="row">
-      <div class="col-12 col-md-12 red-rectangle-text">
-        <div class="red-rectangle"></div>
-        <p class="sub-title">Category</p>
-      </div>
-      <div class="col-12">
-        <div class="theemheader">
-          <div class="theemheader-content">
-          <h2 class="theem-title">Browse By Category</h2>
+    <div class="container">
+      <div class=" Category-bottom">
+        <div class="products-title-row">
+    <div class="products-left2-heading">
+      <h4 class="">Category</h4><h2 class="products-heading">Browse By Category</h2></div>
           </div>
-        </div>
-      </div>
-    </div>
-     <div class="row broder-hover">
+
+
+      <div class="row broder-hover">
       <div class="col-sm-6 col-md-4 col-lg-2  mb-2">
         <div class="Category-broder mb-2">
-          <img class="Category-image" src="/exclusive-new/asstes/images/Category-CellPhone (1).jpg">
+          <img class="Category-image" src="./asstes/images/Category-CellPhone (1).jpg">
           <p class="textimage">CellPhone</p>
         </div>
       </div>
       <div class="col-sm-6 col-md-4 col-lg-2  mb-2">
         <div class="Category-broder mb-2">
-          <img class="Category-image" src="/exclusive-new/asstes/images/Category-Computer (1).jpg">
+          <img class="Category-image" src="./asstes/images/Category-Computer (1).jpg">
           <p class="textimage">CoumPuter</p>
         </div>
 
       </div>
       <div class="col-sm-6 col-md-4 col-lg-2  mb-2">
         <div class="Category-broder mb-2">
-          <img class="Category-image" src="/exclusive-new/asstes/images/Category-Headphone (1).jpg">
+          <img class="Category-image" src="./asstes/images/Category-Headphone (1).jpg">
           <p class="textimage">HeadPhone</p>
         </div>
 
       </div>
       <div class="col-sm-6 col-md-4 col-lg-2  mb-2">
         <div class="Category-broder">
-          <img class="Category-image" src="/exclusive-new/asstes/images/Category-SmartWatch (1).jpg">
+          <img class="Category-image" src="./asstes/images/Category-SmartWatch (1).jpg">
           <p class="textimage">SmartPhone</p>
         </div>
 
       </div>
       <div class="col-sm-6 col-md-4 col-lg-2  mb-2">
         <div class="Category-broder">
-          <img class="Category-image " src="/exclusive-new/asstes/images/Category-Gamepad (1).jpg">
+          <img class="Category-image " src="./asstes/images/Category-Gamepad (1).jpg">
           <p class="textimage">GamePed</p>
         </div>
 
       </div>
       <div class="col-sm-6 col-md-4 col-lg-2 mb-2">
         <div class="Category-broder">
-          <img class="Category-image " src="/exclusive-new/asstes/images/Category-Computer (1).jpg">
+          <img class="Category-image " src="./asstes/images/Category-Computer (1).jpg">
           <p class="textimage">CoumPuter</p>
         </div>
       </div>
-
-
-    </div>
-
+      </div>
+ </div> 
+</div>
   </section> 
 
  <!-- *****Best Selling Products****** -->
   <section class="Best-Selling-Products">
   <div class="container">
-    <div class="row">
-      <div class="col-12 col-md-12 red-rectangle-text">
-        <div class="red-rectangle"></div>
-        <p class="sub-title">This Month</p>
-      </div>
-      <div class="col-12">
-        <div class="theemheader">
-          <div class="theemheader-content">
-          <h2 class="Products-title">Best Selling Products</h2>
-          </div>
-           <button type="button" class="btn btn-danger ms-auto">View All</button>
-        </div>
-      </div>
-    </div>
-
-
+    <div class="products-title-row">
+    <div class="products-left1-heading">
+      <h4 class="">This Month</h4><h2 class="products-heading">Best Selling Products</h2></div>
+           <button type="button" class="btn btn-danger ms-auto">View All</button></div>
     <div class="row">
           <!-- ******  image 1 ******* -->
-              <div class="SellingProducts-content col-sm-12 col-md-6 col-lg-3">
+              <div class="SellingProducts-content col-sm-12 col-md-6 col-lg-3 mb-2">
               <div class="item">
-                  <img src="/exclusive-new/asstes/images/e86f6e872757d20a14861e2e0ebd4e9889693f59 (1)c.png" alt="Gamepad">
+                  <img src="./asstes/images/e86f6e872757d20a14861e2e0ebd4e9889693f59 (1)c.png" alt="Gamepad">
                    <span class="sale-badge">-50%</span></div>
             <div class="flashsales-card-content">
               <p>Small bookself</p>
@@ -507,9 +482,9 @@
           </div>
          </div>
           <!-- ****** image 2 ******* -->
-              <div class="SellingProducts-content col-sm-12 col-md-6 col-lg-3">
+              <div class="SellingProducts-content col-sm-12 col-md-6 col-lg-3 mb-2">
           <div class="item">
-              <img src="/exclusive-new/asstes/images/4f3ca1d12722dbdf98f25179d3c0b785988c513d (1)a.png" alt="Keyboard">
+              <img src="./asstes/images/4f3ca1d12722dbdf98f25179d3c0b785988c513d (1)a.png" alt="Keyboard">
               <span class="sale-badge">-10%</span> </div>
             <div class="flashsales-card-content">
               <p>Gucci duffie bag</p>
@@ -526,9 +501,9 @@
             </div>
 
                   <!-- ******image 3 ******* -->
-              <div class="SellingProducts-content col-sm-12 col-md-6 col-lg-3 mt-2">
+              <div class="SellingProducts-content col-sm-12 col-md-6 col-lg-3 mb-2">
               <div class="item">
-              <img src="/exclusive-new/asstes/images/288da330273c46e1c3dc0a8915c4b031d0345347 (2).png" alt="Monitor"> 
+              <img src="./asstes/images/288da330273c46e1c3dc0a8915c4b031d0345347 (2).png" alt="Monitor"> 
               <span class="sale-badge">-15%</span></div>
             <div class="flashsales-card-content">
               <p>S-series comfort chair</p>
@@ -546,9 +521,9 @@
 
                  
             <!-- ****** image 4 ******* -->
-              <div class="SellingProducts-content col-sm-12 col-md-6 col-lg-3 mt-2">
+              <div class="SellingProducts-content col-sm-12 col-md-6 col-lg-3 mb-2">
                <div class="item">
-              <img src="/exclusive-new/asstes/images/4f3ca1d12722dbdf98f25179d3c0b785988c513d (1)a.png" alt="Chair">
+              <img src="./asstes/images/4f3ca1d12722dbdf98f25179d3c0b785988c513d (1)a.png" alt="Chair">
               <span class="sale-badge">-5%</span></div>
             <div class="flashsales-card-content">
               <p>Gucci duffie bag</p>
@@ -600,24 +575,14 @@
  <section class="Explore-Our-Products">
   <div class="Explore-Our-Products">
   <div class="container">
-    <div class="row">
-      <div class="col-12 col-md-12 red-rectangle-text">
-        <div class="red-rectangle"></div>
-        <p class="sub-title">Our Products</p>
-      </div>
-      <div class="col-12">
-        <div class="theemheader">
-          <div class="theemheader-content">
-          <h2 class="theemheader-title">Explore Our Products</h2>
+    <div class="products-title-row">
+    <div class="products-leftt-heading">
+      <h4 class="">Our Products</h4><h2 class="products-heading">Explore Our Products</h2></div>
+                  <div class="pre-nextbutton  ms-auto">
+            <button class="btn btn-dark" id="prevSlide"><i class="fa-regular fa-square-caret-left"></i></button>
+            <button class="btn btn-dark" id="nextSlide"><i class="fa-regular fa-square-caret-right"></i></button>
           </div>
-            <div class="pre-nextbutton hstack ms-auto">
-            <button class="btn btn-dark" id="prevSlidee"><i class="fa-regular fa-square-caret-left"></i></button>
-            <button class="btn btn-dark" id="nextSlidee"><i class="fa-regular fa-square-caret-right"></i></button>
           </div>
-        </div>
-      </div>
-    </div>
-
         <div class="owl-carousel owl-theme">
            <!-- ****** owl carousel image 1 *******-->
               <div class="item">
@@ -707,7 +672,7 @@
           <!-- ****** owl carousel image 5 *******-->
           <div class="item">
             <div class="item-wrapper">
-              <img src="/exclusive-new/asstes/images/e86f6e872757d20a14861e2e0ebd4e9889693f59 (1)c.png" alt="Table"> </div>
+              <img src="./asstes/images/e86f6e872757d20a14861e2e0ebd4e9889693f59 (1)c.png" alt="Table"> </div>
               <div class="icon-container"><i class="fa-regular fa-heart"></i></div>
              <div class="icon-container1"> <i class="fa-regular fa-eye"></i></div>
             <div class="ExploreProducts-card-content">
@@ -725,7 +690,7 @@
                     <!-- ****** owl carousel image 6 *******-->
           <div class="item">
             <div class="item-wrapper">
-              <img src="/exclusive-new/asstes/images/ee9a38001e9f94261b28e16ea21bacb4144473e8 b.png" alt="Mouse"> </div>
+              <img src="./asstes/images/ee9a38001e9f94261b28e16ea21bacb4144473e8 b.png" alt="Mouse"> </div>
               <div class="icon-container"><i class="fa-regular fa-heart"></i></div>
              <div class="icon-container1"> <i class="fa-regular fa-eye"></i></div>
             <div class="ExploreProducts-card-content">
@@ -744,7 +709,7 @@
                     <!-- ****** owl carousel image 7 *******-->
           <div class="item">
             <div class="item-wrapper">
-              <img src="/exclusive-new/asstes/images/4f3ca1d12722dbdf98f25179d3c0b785988c513d (1)a.png" alt="Headset"> </div>
+              <img src="./asstes/images/4f3ca1d12722dbdf98f25179d3c0b785988c513d (1)a.png" alt="Headset"> </div>
               <div class="icon-container"><i class="fa-regular fa-heart"></i></div>
              <div class="icon-container1"> <i class="fa-regular fa-eye"></i></div>
             <div class="ExploreProducts-card-content">
@@ -762,7 +727,7 @@
           <!-- ****** owl carousel image 8 *******-->
           <div class="item">
             <div class="item-wrapper">
-              <img src="/exclusive-new/asstes/images/e86f6e872757d20a14861e2e0ebd4e9889693f59 (1)c.png" alt="Webcam"></div>
+              <img src="./asstes/images/e86f6e872757d20a14861e2e0ebd4e9889693f59 (1)c.png" alt="Webcam"></div>
               <div class="icon-container"><i class="fa-regular fa-heart"></i></div>
              <div class="icon-container1"> <i class="fa-regular fa-eye"></i></div>
             <div class="ExploreProducts-card-content">
@@ -807,7 +772,7 @@
           <div class="item">
             <div class="item-wrapper mt-2">
               <img src="./asstes/images/e60892a4f0a3d5d144dce622c7338ec5be12908f (1)000004.png" alt="Keyboard"> </div>
-               <a href="#" class="sale-badge1">-10%</a>
+               <span class="sale-badge1">-10%</span>
               <div class="icon-container"><i class="fa-regular fa-heart"></i></div>
              <div class="icon-container1"> <i class="fa-regular fa-eye"></i></div>
             <div class="ExploreProducts-card-content">
@@ -848,7 +813,7 @@
           <div class="item">
             <div class="item-wrapper mt-2">
               <img src="./asstes/images/78e727118c99fe72271cf43f5e3566b39ca7c8f4 (2).jpg" alt="Chair"></div>
-              <a href="#" class="sale-badge1">-5%</a>
+              <span class="sale-badge1">-5%</span>
               <div class="icon-container"><i class="fa-regular fa-heart"></i></div>
              <div class="icon-container1"> <i class="fa-regular fa-eye"></i></div>
             <div class="ExploreProducts-card-content">
@@ -870,7 +835,7 @@
           <div class="item">
             <div class="item-wrapper mt-2">
               <img src="./asstes/images/04a1915fd6cedd7c8b1073685c5f1be1b50e1ac600.png" alt="Table"> </div>
-                <a href="#" class="sale-badge1">20%</a>
+                <span class="sale-badge1">20%</span>
               <div class="icon-container"><i class="fa-regular fa-heart"></i></div>
              <div class="icon-container1"> <i class="fa-regular fa-eye"></i></div>
             <div class="ExploreProducts-card-content">
@@ -888,7 +853,7 @@
                     <!-- ****** owl carousel image 6 *******-->
           <div class="item">
             <div class="item-wrapper mt-2">
-              <img src="/exclusive-new/asstes/images/288da330273c46e1c3dc0a8915c4b031d0345347 (2).png" alt="Mouse"> </div>
+              <img src="./asstes/images/288da330273c46e1c3dc0a8915c4b031d0345347 (2).png" alt="Mouse"> </div>
               <div class="icon-container"><i class="fa-regular fa-heart"></i></div>
              <div class="icon-container1"> <i class="fa-regular fa-eye"></i></div>
             <div class="ExploreProducts-card-content">
@@ -908,7 +873,7 @@
           <div class="item">
             <div class="item-wrapper mt-2">
               <img src="./asstes/images/3cc943ca7e210f637fc0504b7d93cd207df744c2 (2).png" alt="Headset"> </div>
-                <a href="#" class="sale-badge1">-25%</a>
+                <span class="sale-badge1">-25%</span>
               <div class="icon-container"><i class="fa-regular fa-heart"></i></div>
              <div class="icon-container1"> <i class="fa-regular fa-eye"></i></div>
             <div class="ExploreProducts-card-content">
@@ -926,7 +891,7 @@
           <!-- ****** owl carousel image 8 *******-->
           <div class="item">
             <div class="item-wrapper mt-2">
-              <img src="/exclusive-new/asstes/images/e86f6e872757d20a14861e2e0ebd4e9889693f59 (1)c.png" alt="Webcam"></div>
+              <img src="README.md" alt="Webcam"></div>
               <div class="icon-container"><i class="fa-regular fa-heart"></i></div>
              <div class="icon-container1"> <i class="fa-regular fa-eye"></i></div>
             <div class="ExploreProducts-card-content">
@@ -952,20 +917,10 @@
 <!-- ******New-Arrival****** -->
 <section class="New-Arrival">
   <div class="container">
-        <div class="row">
-      <div class="col-12 col-md-12 red-rectangle-text">
-        <div class="red-rectangle"></div>
-        <p class="sub-title">Featured</p>
-      </div>
-      <div class="col-12">
-        <div class="theemheader">
-          <div class="theemheader-content">
-          <h2 class="theemheader-title">New Arrival</h2>
+    <div class="products-title-row">
+    <div class="products-left-heading">
+      <h4 class="">Featured</h4><h2 class="products-heading">New Arrival</h2></div>
           </div>
-        </div>
-      </div>
-    </div>
-
 
     <div class="row">
       <div class="col-sm-12 col-md-6  col-lg-6">
@@ -1017,6 +972,7 @@
 </main>
 <!-- ******Footer****** -->
 <footer class="Footer">
+
 <div class="container-fluid">
  <div class="row">
 <div class="footer-content">
@@ -1058,6 +1014,13 @@
           <h4 class="footertext">Downlode</h4>
           <h6 class="footertext1">Save s3 With New App User</h6>
 
+            <div class="store-section">
+        <img src="./asstes/images/Qr Code.png" alt="">
+    <div class="store-buttons">
+      <img src="./asstes/images/GooglePlay.png" alt="">
+      <img src="./asstes/images/AppStore.png" alt="">
+    </div>
+  </div>
           <div class="icons">
             <i class="fa-brands fa-square-instagram fa-xl" style="color: #7ca0df;"></i>
             <i class="fa-brands fa-facebook fa-xl" style="color: #7ca0df;"></i>
