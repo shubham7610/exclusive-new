@@ -14,7 +14,6 @@ body {
   margin: 0px;
 }
 a,a:hover{
-  color: #DB4444;
   text-decoration: none;
 }
 img{
@@ -85,8 +84,10 @@ img{
 .slider {
   padding: 16px 0px 16px 0px;
 }
-
-.slider-menu  li{
+.slider-home {
+  padding: 16px 0px 16px 0px;
+}
+.slider-menu ul li{
   border-style: none;
   list-style: none;
   font-weight: 400;
@@ -98,7 +99,9 @@ img{
   color: #000000;
   gap: 16px;
 }
-
+.slider-menubar{
+  padding: 0px;
+}
 .border-radious {
   border-left: 2px solid rgb(120, 119, 120);
   height: 401px;
@@ -275,7 +278,7 @@ img{
     border-radius: 4px;
 }
 .productslist-sec{
-  padding: 40px 0;
+  padding: 16px 0;
   overflow: hidden;
 }
 .productslist-sec .owl-carousel .owl-stage-outer{
@@ -428,39 +431,39 @@ border: 1px solid;
 width: 100%;
 background-color: #000000;
 }
-
+.Frame-image{
+      background-color: #000000;
+    padding: 10px 0px 10px 0px;
+    text-align: center;
+}
 .Categories-item{
   color: #00FF66;
-   padding: 16px 10px 16px 10px;
+  padding: 24px 0px 0px 0px;
+}
 
-}
-.Music-Experience-section{
-  padding: 16px 0px 16px 0px;
-}
-.Best-Selling-Products{
-  padding: 16px 0px 16px 0px;
+.SellingProducts-content {
+  padding: 16px 5px 16px 5px;
 }
 .browse-By-Category{
   padding: 16px 0px 16px 0px;
 }
 .text-Experience{
-    font-size: 47px;
+    font-size: 48px;
     font-weight: 600;
     letter-spacing: 4%;
     color: #fafafa;
     line-height: 58px;
-   padding: 16px 10px 16px 10px;
 }
-.buynow-button{
-  padding: 16px 10px 16px 10px;
-}
-.button-buynow{
+
+
+.button-buynow .btnView{
   background-color: #00FF66;
   color: #ffffff;
   border-radius: 3%;
   border-style: none;
   width: 180px;
   height: 50px;
+  padding: 16px 0;
 }
 #box-time{
     display: flex;
@@ -552,9 +555,17 @@ background-color: #000000;
 .Explore-Our-Products{
   padding: 16px 0px 16px 0px;
 }
-
+.Best-Selling-Products{
+  padding: 16px 0px 16px 0px;
+}
+.MusicExperience-title{
+  padding: 16px 0px 16px 0px;
+}
 .New-Arrival{
   padding: 16px 0px 16px 0px;
+}
+.Explore-Our-Products{
+  padding: 32px 0px 16px 0px;
 }
     .card {
       position: relative;
@@ -660,18 +671,19 @@ padding: 24px;
     font-size: 24px;
     font-weight: 700;
    }
-   .footertext:hover{
-    color: rgba(223, 66, 9, 0.708);
-   }
+ 
    .footertext1{
     color: #FAFAFA;
-    line-height: 36px;
+    line-height: 48px;
     font-size: 16px;
     font-weight: 500;
    }
-      .footertext1:hover{
-    color: rgba(196, 28, 13, 0.685);
-   }
+.list-unstyled{
+   color: #FAFAFA;
+    line-height: 36px;
+    font-size: 16px;
+    font-weight: 500;
+}
  .icons{
 display: flex;
 gap: 20px;
@@ -686,6 +698,10 @@ padding: 24px 10px 24px 10px;
 .footer-Rimel{
   text-align: center;
   color: #999;
+}
+.footer-werper{
+color: white;
+text-decoration: none;
 }
     .store-section {
       display: flex;
@@ -706,6 +722,36 @@ padding: 24px 10px 24px 10px;
       flex-direction: column;
       gap: 2px;
     }
+
+.timer-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  align-items: center;
+}
+
+.circle {
+  background-color: white;
+  color: black;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle div {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.circle span {
+  font-size: 10px;
+  margin-top: 5px;
+}
+
 @media screen and (max-width:1024px) {
   .dropdown-arrow {
     margin-left: 35px;
@@ -715,8 +761,16 @@ padding: 24px 10px 24px 10px;
     margin-left: 8px;
   }
 }
+@media screen and (max-width:1440px) {
+.button-buynow {
+    padding: 24px 0px 24px 0px;
+}
+}
 @media screen and (max-width:768px) {
   #box-time{
+    display: none;
+  }
+  .text-Experience{
     display: none;
   }
 }
@@ -762,9 +816,7 @@ padding: 24px 10px 24px 10px;
         line-height: 22px;
         margin-bottom: 0px;
       }
-  .buynow-button{
-    display: none;
-  }
+
 }
 
 

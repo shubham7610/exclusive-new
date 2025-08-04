@@ -69,6 +69,7 @@
         <div class="row">
       <div class="col-sm-12 col-md-12 col-lg-3">
         <div class="slider-menu"> 
+          <ul class="slider-menubar">
              <li class="nav-item">
              <div class="dropdown">
             <a class="nav-link active " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -116,7 +117,7 @@
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="#">Health & Beauty</a>
             </li>
-   
+   </ul>
       </div>
       </div>
 
@@ -212,7 +213,6 @@
  <main>
 
   <section class="productslist-sec bestSelling-sec">
- <div class="flesh-sales">
   <div class="container sale-bottom">
     <div class="products-title-row">
     <div class="products-left-heading">
@@ -395,7 +395,6 @@
     <button type="button" class="btn button-products">View All Products</button>
   </div>
   </div>
-  </div>
  </section> 
 
 
@@ -545,35 +544,45 @@
  </section> 
 
  <!-- *****Best Music Experience****** -->
-<section class="Music-Experience-section">
-  <div class="MusicExperience-title">
+<section class="MusicExperience-title">
     <div class="container">
-      <div class="row">
+      <div class="row" >
         <div class="col-sm-12 col-md-6 col-lg-6">
         <h6 class="Categories-item">Categories</h6>
         <p class=" text-Experience">Enhance Your Music Experience</p>
 
-        <div id="box-time">
-          <div class="timerr" id="days" ></div>
-          <div class="timerr" id="hours"></div>
-          <div class="timerr" id="minutes"></div>
-          <div class="timerr" id="seconds"></div>
-        </div>
-        <div class="buynow-button">
-        <button type="button" class=" btn button-buynow">Buy Now</button>
+          <div class="timer-content">
+    <div class="circle">
+      <div id="hours">00</div>
+      <span>Hours</span>
+    </div>
+    <div class="circle">
+      <div id="days">00</div>
+      <span>Days</span>
+    </div>
+    <div class="circle">
+      <div id="minutes">00</div>
+      <span>Minutes</span>
+    </div>
+    <div class="circle">
+      <div id="seconds">00</div>
+      <span>Seconds</span>
+    </div>
+  </div>
+        <div class="button-buynow ">
+        <button type="button" class="btn btnView mt-3">Buy Now</button>
         </div>
         </div>
         <div class="col-sm-12 col-md-6 col-lg-6">
-          <img class="img-fluid" src="./asstes/images/3cc943ca7e210f637fc0504b7d93cd207df744c2 (2).png">
+          <img class="Frame-image img-fluid" src="./asstes/images/Frame 694.jpg">
         </div>
       </div>
     </div>
-  </div>
+
 </section> 
 
 <!-- ******Explore Our Products****** -->
  <section class="Explore-Our-Products">
-  <div class="Explore-Our-Products">
   <div class="container">
     <div class="products-title-row">
     <div class="products-leftt-heading">
@@ -911,7 +920,7 @@
   <div class="view-all-button">
     <button type="button" class="btn button-products">View All Products</button>
   </div>
-   </div>
+  </div>
  </section>
 
 <!-- ******New-Arrival****** -->
@@ -970,15 +979,22 @@
 </section>
 
 </main>
-<!-- ******Footer****** -->
-<footer class="Footer">
 
+
+
+<!-- ******Footer****** -->
+   <Footer class="Footer">
 <div class="container-fluid">
  <div class="row">
 <div class="footer-content">
+
+
+
         <div class="footer-flex">
           <h4 class="footertext">Exclusive</h4>
-          <h5 class="footertext1"> Subscribe</h5>
+            <ul class="list-unstyled">
+          <li><a href="#" class="text-white text-decoration-none">Subscribe</a></li>
+        </ul>
           <div class="mail" style="display: flex;">
             <input type="text" class="form-control " placeholder="Enter Your Email I'd"
               aria-label="Recipient's username" aria-describedby="button-addon2">
@@ -986,34 +1002,46 @@
                 class="fa-brands fa-telegram"></i></button>
           </div>
         </div>
+
+
         <div class="footer-flex">
           <h4 class="footertext">Support</h4>
-          <h6 class="footertext1">111 Bijoy Bamgladesh. visit</h6>
-          <h6 class="footertext1">exclusive@gmail.com</h6>
-          <h6 class="footertext1"> +88015-88888-9999</h6>
-
+ <ul class="list-unstyled">
+          <li><a href="#" class="footer-werper">111 Bijoy Bamgladesh. visit</a></li>
+          <li><a href="#" class="footer-werper">exclusive@gmail.com</a></li>
+          <li><a href="#" class="footer-werper">+88015-88888-9999</a></li>
+        </ul>
         </div>
+
+
         <div class="footer-flex">
           <h4 class="footertext">Account</h4>
-          <h6 class="footertext1"> Shoping Cart buy 12 12 Now</h6>
-          <h6 class="footertext1">Login/ Register </h6>
-          <h6 class="footertext1">My Account</h6>
-          <h6 class="footertext1">Wishlist </h6>
-          <h6 class="footertext1">Shop </h6>
-          <div class="butto"></div>
+           <ul class="list-unstyled">
+          <li><a href="#" class="footer-werper">Shoping Cart buy 1212 Now </a></li>
+          <li><a href="#" class="footer-werper">Login/ Register </a></li>
+          <li><a href="#" class="footer-werper">My Account</a></li>
+          <li><a href="#" class="footer-werper">Wishlist</a></li>
+          <li><a href="#" class="footer-werper">Shop</a></li>
+        </ul>
         </div>
-        <div class="footer-flex">
+
+
+       <div class="footer-flex">
           <h4 class="footertext">Quick Link</h4>
-          <h6 class="footertext1">Privacy Policy 1515 call user</h6>
-          <h6 class="footertext1">Terms Of Use</h6>
-          <h6 class="footertext1"> FAQ</h6>
-          <h6 class="footertext1"> Contact</h6>
-        </div>
+        <ul class="list-unstyled">
+          <li><a href="#" class="footer-werper">Privacy Policy 1515 call user</a></li>
+          <li><a href="#" class="footer-werper">Terms Of Use</a></li>
+          <li><a href="#" class="footer-werper">FAQ</a></li>
+          <li><a href="#" class="footer-werper">Contact</a></li>
+        </ul>
+       </div>
+
 
         <div class="footer-flex">
           <h4 class="footertext">Downlode</h4>
-          <h6 class="footertext1">Save s3 With New App User</h6>
-
+ <ul class="list-unstyled">
+          <li><a href="#" class="footer-werper">Save s3 With New App User</a></li>
+        </ul>
             <div class="store-section">
         <img src="./asstes/images/Qr Code.png" alt="">
     <div class="store-buttons">
@@ -1030,11 +1058,17 @@
 
         </div>
         </div>
+
         <div class="reduise1"></div>
         <p class="footer-Rimel">Copyright Rimel 2022. All right reserved</p>
+
+
       </div>
 </div>
-</footer>
+</Footer>
+
+
+
 
 
 <script src="./exclusive-new/asstes/js/bootstrap.min.js"></script>
@@ -1106,31 +1140,6 @@
       }
     })
   </script>
- <script>
-    var endTime = new Date("29 April 2018 9:56:00 GMT+01:00");
-    var endTime = new Date("30 July 2025 10:15:00 GMT+01:00");
-    endTime = (Date.parse(endTime) / 1000);
-
-    var now = new Date();
-    now = (Date.parse(now) / 1000);
-
-    var timeLeft = endTime - now;
-
-    var days = Math.floor(timeLeft / 86400);
-    var hours = Math.floor((timeLeft - (days * 86400)) / 3600);
-    var minutes = Math.floor((timeLeft - (days * 86400) - (hours * 3600)) / 60);
-    var seconds = Math.floor((timeLeft - (days * 86400) - (hours * 3600) - (minutes * 60)));
-
-    if (hours < "10") { hours = "0" + hours; }
-    if (minutes < "10") { minutes = "0" + minutes; }
-    if (seconds < "10") { seconds = "0" + seconds; }
-
-    $("#days").html(days + "<span>Days</span>");
-    $("#hours").html(hours + "<span>Hours</span>");
-    $("#minutes").html(minutes + "<span>Minutes</span>");
-    $("#seconds").html(seconds + "<span>Seconds</span>");
-
-  </script>
   <script>
     document.addEventListener('DOMContentLoaded', function () {
       var splide = new Splide('.splide', {
@@ -1195,5 +1204,35 @@
       }
     })
   </script>
+  <script>
+let targetTime = new Date();
+targetTime.setDate(targetTime.getDate() + 5);
+targetTime.setHours(targetTime.getHours() + 23);
+targetTime.setMinutes(targetTime.getMinutes() + 59);
+targetTime.setSeconds(targetTime.getSeconds() + 35);
+
+function updateTimer() {
+  const now = new Date().getTime();
+  const distance = targetTime - now;
+
+  const days = String(Math.floor(distance / (1000 * 60 * 60 * 24))).padStart(2, '0');
+  const hours = String(Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60))).padStart(2, '0');
+  const minutes = String(Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60))).padStart(2, '0');
+  const seconds = String(Math.floor((distance % (1000 * 60)) / 1000)).padStart(2, '0');
+
+  document.getElementById("days").innerText = days;
+  document.getElementById("hours").innerText = hours;
+  document.getElementById("minutes").innerText = minutes;
+  document.getElementById("seconds").innerText = seconds;
+
+  if (distance < 0) {
+    clearInterval(timerInterval);
+    document.querySelector(".timer-container").innerHTML = "<h2 style='color:white'>Time's up!</h2>";
+  }
+}
+
+const timerInterval = setInterval(updateTimer, 1000);
+updateTimer();
+  </script> 
 </body>
 </html>
